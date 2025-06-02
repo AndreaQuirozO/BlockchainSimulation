@@ -10,10 +10,6 @@ from pyvis.network import Network
 from streamlit.components.v1 import html
 import io
 
-from User import User
-from Transaction import Transaction
-from UTXO import UTXO
-from Block import Block
 from System import System
 
 
@@ -350,14 +346,19 @@ elif menu == 'Guardar Estado':
         x = st.session_state.system
 
         buffer = io.BytesIO()
-        pickle.dump(st.session_state.system, buffer)
+        pickle.dump(x, buffer)
         buffer.seek(0)
 
-        st.download_button(
+        download_clicked = st.download_button(
             label="⬇️ Descargar sistema como .pkl",
             data=buffer,
             file_name="sistema.pkl",
             mime="application/octet-stream"
         )
+
+        if download_clicked:
+            st.success("✅ Archivo descargado con éxito como sistema.pkl")
     except AttributeError:
         st.error("⚠️ No se ha cargado un sistema. Por favor, crea un nuevo sistema o carga uno existente.")
+    except pickle.PicklingError as e:
+        st.error("Pickling fallid. Refresca el sistema.")
