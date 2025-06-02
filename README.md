@@ -41,7 +41,6 @@ Este proyecto simula un sistema de blockchain simplificado utilizando Python y S
 ## 📂 Estructura del Proyecto
 
 ```
-
 README.md
 └── src
     ├── Block.py                     # Definición de bloques y hashing
