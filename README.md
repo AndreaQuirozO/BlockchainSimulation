@@ -49,7 +49,6 @@ README.md
     ├── Transaction.py               # Lógica de transacciones, firmas y validación
     ├── UTXO.py                      # Modelo de salidas no gastadas (UTXO)
     └── User.py                      # Gestión de wallets y llaves
-
 ````
 
 ---
