@@ -1,5 +1,6 @@
 # 🧱 Simulación de Blockchain en Python
 
+![Uploading Screenshot 2025-06-01 at 9.09.49 p.m..png…]()
 
 
 Este proyecto simula un sistema de blockchain simplificado utilizando Python y Streamlit. Incluye los componentes principales de una cadena de bloques: usuarios con wallets, transacciones, manejo de UTXOs, minería con Prueba de Trabajo (PoW), creación de bloques y una interfaz interactiva.
