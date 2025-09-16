@@ -69,5 +69,5 @@ README.md
 
 ## 🎥 System Demo
 
-[Click here to watch the demo video](https://drive.google.com/file/d/18IEYmmmUV7B4eFUr93vkB4cuVs6n-mNd/view?usp=sharing)
+[Click here to watch the demo video](https://drive.google.com/file/d/1irmibxGPKnbp8mnaR5ZVYQXonowl0ZU9/view?usp=sharing)
 
