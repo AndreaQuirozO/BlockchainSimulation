@@ -1,70 +1,73 @@
-# 🧱 Simulación de Blockchain en Python
+# 🧱 Blockchain Simulation in Python
 
-<img width="1311" alt="Screenshot 2025-06-01 at 9 10 36 p m" src="https://github.com/user-attachments/assets/41f0215d-67fc-4725-bfc1-9d902605ef2d" />
+<img width="1311" alt="Screenshot 2025-06-01 at 9 10 36 p m" src="https://github.com/user-attachments/assets/41f0215d-67fc-4725-bfc1-9d902605ef2d" />
 
-
-Este proyecto simula un sistema de blockchain simplificado utilizando Python y Streamlit. Incluye los componentes principales de una cadena de bloques: usuarios con wallets, transacciones, manejo de UTXOs, minería con Prueba de Trabajo (PoW), creación de bloques y una interfaz interactiva.
-
+This project simulates a simplified blockchain system using Python and Streamlit. It includes the main components of a blockchain: users with wallets, transactions, UTXO handling, mining with Proof of Work (PoW), block creation, and an interactive interface.
 
 ---
 
-## 🚀 Funcionalidades Implementadas
+## 🚀 Implemented Features
 
-### 💳 Wallets y Llaves
-- Cada usuario tiene un par de llaves privada/pública (ECDSA sobre `secp256k1`).
-- La dirección se obtiene como el hash SHA-256 de la llave pública.
+### 💳 Wallets and Keys
 
-### 📤 Transacciones y UTXO
-- Modelo basado en UTXOs para rastrear saldos y transferencias.
-- Firmas digitales para autorizar transacciones.
-- Soporte para comisiones de minería.
+* Each user has a private/public key pair (ECDSA over `secp256k1`).
+* The address is generated as the SHA-256 hash of the public key.
 
-### 🔗 Bloques y Blockchain
-- Cada bloque contiene transacciones válidas, hash anterior, timestamp y nonce.
+### 📤 Transactions and UTXO
 
-### ⛏️ Bloque Génesis y Minería
-- El bloque génesis entrega 1000 monedas al primer usuario.
-- Prueba de trabajo simplificada: el hash debe empezar con cierta cantidad de ceros.
-- Recompensas por bloque + comisiones se entregan al minero a través de una transacción coinbase.
+* UTXO-based model to track balances and transfers.
+* Digital signatures to authorize transactions.
+* Support for mining fees.
 
-### 💻 Interfaz con Streamlit
-- Crear nuevo sistema o cargar uno existente
-- Ver resumen del sistema
-- Crear nuevas wallets
-- Enviar transacciones
-- Minar bloques
-- Visualizar la cadena de bloques
-- Ver saldos de los usuarios
-- Guardar el sistema
+### 🔗 Blocks and Blockchain
+
+* Each block contains valid transactions, the previous hash, timestamp, and nonce.
+
+### ⛏️ Genesis Block and Mining
+
+* The genesis block delivers 1000 coins to the first user.
+* Simplified proof of work: the hash must start with a certain number of zeros.
+* Block rewards + fees are granted to the miner through a coinbase transaction.
+
+### 💻 Streamlit Interface
+
+* Create a new system or load an existing one
+* View system summary
+* Create new wallets
+* Send transactions
+* Mine blocks
+* Visualize the blockchain
+* View user balances
+* Save the system
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📂 Project Structure
 
 ```
 README.md
 └── src
-    ├── Block.py                     # Definición de bloques y hashing
-    ├── BlockchainSimulation.py      # Lógica de la interfaz con Streamlit
-    ├── System.py                    # Controlador del sistema (usuarios, transacciones, minería)
-    ├── Transaction.py               # Lógica de transacciones, firmas y validación
-    ├── UTXO.py                      # Modelo de salidas no gastadas (UTXO)
-    └── User.py                      # Gestión de wallets y llaves
-````
+    ├── Block.py                     # Block definition and hashing
+    ├── BlockchainSimulation.py      # Streamlit interface logic
+    ├── System.py                    # System controller (users, transactions, mining)
+    ├── Transaction.py               # Transaction logic, signatures, and validation
+    ├── UTXO.py                      # Unspent Transaction Output (UTXO) model
+    └── User.py                      # Wallet and key management
+```
 
 ---
 
-## 📚 Tecnologías Utilizadas
+## 📚 Technologies Used
 
 * Python 3.11
 * Streamlit
-* ECDSA (criptografía de curva elíptica)
+* ECDSA (Elliptic Curve Cryptography)
 * SHA-256 hashing
-* Pandas (para visualización de datos)
+* Pandas (for data visualization)
 
 ---
 
-## 🎥 Demo del sistema
+## 🎥 System Demo
 
-[Haz clic aquí para ver la demostración en video](https://drive.google.com/file/d/18IEYmmmUV7B4eFUr93vkB4cuVs6n-mNd/view?usp=sharing)
+[Click here to watch the demo video](https://drive.google.com/file/d/18IEYmmmUV7B4eFUr93vkB4cuVs6n-mNd/view?usp=sharing)
 
